@@ -30,7 +30,7 @@ client.on("messageCreate", (message) => {
     const command = args.shift().toLowerCase() //Makes the command not case senstive
 
     if(command === "ping") { //test command
-        client.commands.get("ping").run(client, message, args); //test command
+        client.commands.execute("ping").run(client, message, args); //test command
     } //test command
 });    
 
